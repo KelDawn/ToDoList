@@ -3,6 +3,7 @@
 namespace app;
 
 use Illuminate\Database\Eloquent\Model;
+use DB;
 
 class todo extends Model
 {
