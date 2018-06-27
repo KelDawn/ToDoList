@@ -10,6 +10,8 @@ use DB;
 
 
 class todo extends Controller
+{
+
 
 public function savetask(Request $request)
 {
@@ -56,6 +58,8 @@ public function index()
 {
 	$tasks = DB::table('tasklist')->get();
 	return view('tasklist.index', compact('tasks'));
+}
+
 }
 
 
