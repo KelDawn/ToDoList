@@ -35,7 +35,7 @@ return view('view', compact('task'));
 
 public function addnew()
 {
-	return view('newtask'));
+	return view('newtask');
 }
 
 
@@ -43,13 +43,13 @@ public function edittask(Request $request)
 {
 $task = $request->id;
 $request->session()->flash('task', $task);
-$task = todo::where('id', $task)->get();
-return view('edittask', compact('task'));
+$task = todo::where('id', $taskid)->get();
+return view('edittask', compact('taskid'));
 }
 
 public function updatetask (Request $request)
 $task = todo::find($id);
-$task->task ;
+$task->task;
 $task->save():
 }
 
