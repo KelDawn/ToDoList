@@ -13,7 +13,6 @@ class todo extends Controller
 
 public function savetask(Request $request)
 {
-	/*
 	$task = new task;
 	$task->task = $request->task;
 	$task->priority = $request->priority;
@@ -22,7 +21,6 @@ public function savetask(Request $request)
 	$task->user = $request->user;
 	$task->save();
 	$savechoice = $request->save;
-	*/
 	echo "test";
 	print_r($task);
 }
